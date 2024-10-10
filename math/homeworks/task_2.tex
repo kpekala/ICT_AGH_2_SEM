@@ -1,0 +1,39 @@
+\documentclass[12 pt]{article}        	%sets the font to 12 pt and says this is an article (as opposed to book or other documents)
+\usepackage{amsfonts, amssymb}					% packages to get the fonts, symbols used in most math
+\usepackage{polski}
+%\usepackage{setspace}               		% Together with \doublespacing below allows for doublespacing of the document
+
+\oddsidemargin=-0.5cm                 	% These three commands create the margins required for class
+\setlength{\textwidth}{6.5in}         	%
+\addtolength{\voffset}{-20pt}        		%
+\addtolength{\headsep}{25pt}           	%
+
+
+
+\pagestyle{myheadings}                           	
+\markright{Konrad Pękala\hfill \today \hfill} 
+
+
+\begin{document}									
+Wiemy, że \(x,y,z \in \{0, 1\}\) i, że \(xy = z\).
+Wypiszmy wszystkie możliwe wartości w tabelce: 
+\begin{center}
+\begin{tabular}{ |c|c|c| } 
+\hline
+ x & y & z \\
+ \hline
+ 0 & 0 & 0 \\
+ \hline
+ 0 & 1 & 0 \\
+ \hline
+ 1 & 0 & 0 \\
+ \hline
+ 1 & 1 & 1 \\
+ \hline
+\end{tabular}
+\end{center}
+Zajmijmy się ograniczeniami: \\
+\(z \leq x\) Jeśli \(x=0\) to \(z=0\) \\
+\(z \leq y\) Jeśli \(y=0\) to \(z=0\) \\
+\(z \geq x + y - 1\) Jeśli \(x = 1\) lub \(y = 1\) to \(z = 1\)
+\end{document}
